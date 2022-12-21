@@ -1,0 +1,105 @@
+.wrapper.home-hero {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+.wrapper {
+    display: flex;
+    width: 85%;
+    max-width: 1215px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ---------- left ------------ */
+.hero-gradient-heading {
+    display: inline;
+    padding-right: 5px;
+    background-image: linear-gradient(108deg, #b16cea 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.heading {
+    font-weight: 700;
+}
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #000;
+    font-size: 75px;
+    line-height: 110%;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+.home-hero-paragraph-wrapper {
+    max-width: 590px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.paragraph {
+    font-size: 22px;
+    line-height: 150%;
+}
+p {
+    margin-bottom: 0px;
+    color: #666;
+}
+.button {
+    position: relative;
+    overflow: visible;
+}
+.button-up {
+    position: relative;
+    z-index: 1;
+    padding: 20px 30px;
+    background-color: #000;
+}
+.button-text {
+    color: #fff;
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 500;
+}
+.button-down {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    padding: 20px 30px;
+    background-image: linear-gradient(108deg, #b16cea 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91%);
+    transform: translate(7px, 7px);
+}
+.home-hero-link-wrapper {
+    display: flex;
+    margin-left: 40px;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+.home-hero-link-text {
+    color: #000;
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 700;
+    text-decoration: none;
+}
+.home-hero-button-wrapper {
+    display: flex;
+    max-width: 372px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.home-hero-arrow-wrapper {
+    display: flex;
+    width: 14px;
+    height: 14px;
+    margin-left: 14px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* ---------- right ------------ */
