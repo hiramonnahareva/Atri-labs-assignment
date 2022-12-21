@@ -1,0 +1,33 @@
+.wrapper.nav {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 85%;
+    max-width: 1215px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.w-nav-menu {
+    position: relative;
+    float: right;
+}
+.nav-link {
+    margin-right: 20px;
+    padding: 0px 10px 10px;
+    -webkit-transition: color 200ms ease;
+    transition: color 200ms ease;
+    color: #000;
+    font-size: 16px;
+    line-height: 28px;
+    transition: color 200ms ease;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+}
+.nav-button {
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+}
