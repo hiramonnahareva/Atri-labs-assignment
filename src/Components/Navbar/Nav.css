@@ -14,20 +14,48 @@
 .nav-link {
     margin-right: 20px;
     padding: 0px 10px 10px;
-    -webkit-transition: color 200ms ease;
     transition: color 200ms ease;
     color: #000;
     font-size: 16px;
     line-height: 28px;
     transition: color 200ms ease;
     position: relative;
-    display: inline-block;
     vertical-align: top;
     text-decoration: none;
+}
+.nav-link:hover{
+    color: rgb(112, 112, 112);
+}
+a {
+    color: #3c46ff;
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 500;
+    text-decoration: none;
+}
+.nav-button-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .nav-button {
     padding-right: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
     text-decoration: none;
+     display: flex;
+}
+.nav-button-text {
+    color: #000;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+}
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+.nav-button-arrow-wrapper{
+   margin-left: 8px;
+   transition: color 200ms ease;
 }
