@@ -1,0 +1,96 @@
+
+.experience-heading-wrapper {
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #000;
+    font-size: 36px;
+    line-height: 100%;
+    font-weight: 700;
+}
+/* -------- left side ----------- */
+
+.experience-arrow-and-time-period-wrapper {
+    display: flex;
+    margin-left: 20px;
+}
+.experience-arrow-wrapper {
+    position: absolute;
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    display: flex;
+    width: 25px;
+    height: 25px;
+    margin-left: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #000;
+    line-height: 110%;
+}
+.text-block._16px {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    line-height: 130%;
+    font-weight: 500;
+}
+
+.experience-item-heading-wrapper {
+    margin-bottom: 8px;
+}
+.experience-time-period-wrapper {
+    min-width: 85px;
+    margin-right: 60px;
+}
+.experience-heading-wrapper {
+    margin-bottom: 50px;
+}
+.text-block._16px {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    line-height: 130%;
+}
+.experience-item-wrapper {
+    width: 583px;
+    position: relative;
+    display: flex;
+    margin-bottom: 35px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-decoration: none;
+}
+.experience-grey-bottom-border {
+    position: absolute;
+    left: 0%;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    overflow: hidden;
+    height: 1px;
+    background-color: #e5e5e5;
+}
+/* Rigth side */
+
+.experience-icon-and-details-wrapper {
+    display: flex;
+    align-items: center;
+}
+.experience-icon-wrapper {
+    width: 50px;
+    height: 50px;
+}
+.experience-details-container {
+    margin-left: 20px;
+}
