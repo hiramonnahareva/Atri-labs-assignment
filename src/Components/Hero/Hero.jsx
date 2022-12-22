@@ -35,6 +35,9 @@ const Hero = () => {
                     
             </div>
             {/* ---------- right ------------ */}
+            <div className="home-hero-image-wrapper">
+            <img src="https://assets.website-files.com/5fef5619b640934b33c2385e/60ad1c2b0e1d633fc7ef2e69_Group%20160-min.jpg" loading="lazy"  alt="" class="image home-hero"/>
+            </div>
         </div>
     );
 };

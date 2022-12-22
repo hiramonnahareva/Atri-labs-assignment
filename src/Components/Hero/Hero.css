@@ -102,4 +102,15 @@ p {
     justify-content: center;
     align-items: center;
 }
+
 /* ---------- right ------------ */
+
+.home-hero-image-wrapper {
+    position: relative;
+    width: 43%;
+    max-width: 500px;
+}
+img {
+    display: inline-block;
+    max-width: 100%;
+}
