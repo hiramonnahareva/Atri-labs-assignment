@@ -15,7 +15,7 @@ const Nav = () => {
                     <a href="/" className='nav-button w-inline-block'>
                         <div className="nav-button-flex">
                             <div className="nav-button-text">Book a call</div>
-                            <div class="nav-button-arrow-wrapper"><img src="https://assets.website-files.com/5fef5619b640934b33c2385e/5ff019fc559a4200eda62273_Vector.svg" loading="lazy" width="13" alt=""/></div>
+                            <div className="nav-button-arrow-wrapper"><img src="https://assets.website-files.com/5fef5619b640934b33c2385e/5ff019fc559a4200eda62273_Vector.svg" loading="lazy" width="13" alt=""/></div>
                         </div>
                         </a>
                 </nav>
