@@ -53,19 +53,20 @@ const Experience = () => {
                     <h3>📚 &nbsp;Education</h3>
                     </div>
                     <div className="experience-items-container">
+                        {/* ----------- experience left side --------------- */}
 
                         {
                             left_Experience.map(item => 
-                                <a href="/" className="experience-item-wrapper w-inline-block">
-                        <div class="experience-item-heading-and-subheading-wrapper">
-                            <div class="experience-item-heading-wrapper">
-                            <h5 class="experience-item-heading-text">{item.headingText}</h5>
-                            </div><div class="experience-item-subheading-wrapper">
-                                <div class="text-block _16px">{item.textBlock}</div></div></div>
-                        <div class="experience-arrow-and-time-period-wrapper"><div class="experience-time-period-wrapper"><div class="text-block _16px">• {item. timePeriod}</div></div><div class="experience-arrow-wrapper">
-                            <img src="https://assets.website-files.com/5fef5619b640934b33c2385e/5fef5843523345463e5a1851_arrow-right-up-line%206.svg" loading="lazy" alt="" class="image contain"/>
+                                <a href="/" key={item.id} className="experience-item-wrapper w-inline-block">
+                        <div className="experience-item-heading-and-subheading-wrapper">
+                            <div className="experience-item-heading-wrapper">
+                            <h5 className="experience-item-heading-text">{item.headingText}</h5>
+                            </div><div className="experience-item-subheading-wrapper">
+                                <div className="text-block _16px">{item.textBlock}</div></div></div>
+                        <div className="experience-arrow-and-time-period-wrapper"><div className="experience-time-period-wrapper"><div className="text-block _16px">• {item. timePeriod}</div></div><div className="experience-arrow-wrapper">
+                            <img src="https://assets.website-files.com/5fef5619b640934b33c2385e/5fef5843523345463e5a1851_arrow-right-up-line%206.svg" loading="lazy" alt="" className="image contain"/>
                             </div></div>
-                        <div class="experience-grey-bottom-border"><div class="experience-black-bottom-border"></div></div>
+                        <div className="experience-grey-bottom-border"><div className="experience-black-bottom-border"></div></div>
                         </a>
                                 )
                         }
@@ -78,15 +79,17 @@ const Experience = () => {
                     </div>
                     <div className="experience-items-container">
 
+                        {/* ----------- experience rigth side --------------- */}
+
 {
     Right_Experience.map(item => 
-        <a href="/" className="experience-item-wrapper w-inline-block">
-            <div class="experience-icon-and-details-wrapper">
-                <div class="experience-icon-wrapper">
-                    <img src={item.img} loading="lazy" alt="" class="image contain"/></div><div class="experience-details-container"><div class="experience-item-heading-and-fulltime-wrapper"><div class="experience-item-heading-wrapper work-experience"><h5 class="experience-item-heading-text">{item.headingText}</h5></div><div class="experience-item-fulltime-wrapper"></div></div>
-                    <div class="experience-item-subheading-wrapper"><div class="text-block _16px">{item.textBlock}</div></div></div></div>
-            <div class="experience-arrow-and-time-period-wrapper"><div class="experience-time-period-wrapper work-experience"><div class="text-block _16px">• {item.timePeriod}</div></div><div class="experience-arrow-wrapper"><img src="https://assets.website-files.com/5fef5619b640934b33c2385e/5fef5843523345463e5a1851_arrow-right-up-line%206.svg" loading="lazy" alt="" class="image contain"/></div></div>
-            <div class="experience-grey-bottom-border"><div class="experience-black-bottom-border"></div></div>
+        <a href="/" key={item.id} className="experience-item-wrapper w-inline-block">
+            <div className="experience-icon-and-details-wrapper">
+                <div className="experience-icon-wrapper">
+                    <img src={item.img} loading="lazy" alt="" className="image contain"/></div><div className="experience-details-container"><div className="experience-item-heading-and-fulltime-wrapper"><div className="experience-item-heading-wrapper work-experience"><h5 className="experience-item-heading-text">{item.headingText}</h5></div><div className="experience-item-fulltime-wrapper"></div></div>
+                    <div className="experience-item-subheading-wrapper"><div className="text-block _16px">{item.textBlock}</div></div></div></div>
+            <div className="experience-arrow-and-time-period-wrapper"><div className="experience-time-period-wrapper work-experience"><div className="text-block _16px">• {item.timePeriod}</div></div><div className="experience-arrow-wrapper"><img src="https://assets.website-files.com/5fef5619b640934b33c2385e/5fef5843523345463e5a1851_arrow-right-up-line%206.svg" loading="lazy" alt="" className="image contain"/></div></div>
+            <div className="experience-grey-bottom-border"><div className="experience-black-bottom-border"></div></div>
 </a>
         )
 }

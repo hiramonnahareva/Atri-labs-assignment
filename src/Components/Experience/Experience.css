@@ -1,3 +1,4 @@
+/* -------- heading ----------- */
 
 .experience-heading-wrapper {
     padding-bottom: 30px;
@@ -81,7 +82,7 @@ h5 {
     height: 1px;
     background-color: #e5e5e5;
 }
-/* Rigth side */
+/* ---------Rigth side ----------- */
 
 .experience-icon-and-details-wrapper {
     display: flex;
