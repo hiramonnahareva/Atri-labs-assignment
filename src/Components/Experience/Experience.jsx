@@ -63,7 +63,9 @@ const Experience = () => {
                             <h5 className="experience-item-heading-text">{item.headingText}</h5>
                             </div><div className="experience-item-subheading-wrapper">
                                 <div className="text-block _16px">{item.textBlock}</div></div></div>
-                        <div className="experience-arrow-and-time-period-wrapper"><div className="experience-time-period-wrapper"><div className="text-block _16px">• {item. timePeriod}</div></div><div className="experience-arrow-wrapper">
+                        <div className="experience-arrow-and-time-period-wrapper"><div className="experience-time-period-wrapper">
+                            <div className="text-block _16px">• {item.timePeriod}</div></div>
+                            <div className="experience-arrow-wrapper">
                             <img src="https://assets.website-files.com/5fef5619b640934b33c2385e/5fef5843523345463e5a1851_arrow-right-up-line%206.svg" loading="lazy" alt="" className="image contain"/>
                             </div></div>
                         <div className="experience-grey-bottom-border"><div className="experience-black-bottom-border"></div></div>

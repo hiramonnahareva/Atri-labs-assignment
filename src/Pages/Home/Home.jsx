@@ -1,5 +1,6 @@
 import React from 'react';
 import About from '../../Components/About/About';
+import BlogSection from '../../Components/BlogSection/BlogSection';
 import CaseStudies from '../../Components/CaseStudies/CaseStudies';
 import Experience from '../../Components/Experience/Experience';
 import FAQSection from '../../Components/FAQ/FAQSection';
@@ -15,6 +16,7 @@ const Home = () => {
             <Trusted/>
             <Services/>
             <CaseStudies/>
+            <BlogSection/>
             <About/>
             <Experience/>
             <Testimonials/>

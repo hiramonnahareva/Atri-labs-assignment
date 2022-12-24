@@ -29,8 +29,8 @@ const Testimonials = () => {
                                 <div className="text-block testimonial-name">Jennifer Musk</div>
                             <div className="text-block _18px">Project Manager@ Microsoft</div>
                             <div className='testimonial-arrow-container'>
-                <div class="testimonial-arrow left w-slider-arrow-left" role="button" tabindex="0" aria-controls="w-slider-mask-1" aria-label="previous slide"><div class="testimonial-arrow-icon-wrapper"><img src="https://assets.website-files.com/5fef5619b640934b33c2385e/5fef584ac8595f0e43b2b567_Vector-1.svg" loading="lazy" alt="" class="image contain"/></div></div>
-                <div class="testimonial-arrow right w-slider-arrow-right" role="button" tabindex="0" aria-controls="w-slider-mask-1" aria-label="next slide"><div class="testimonial-arrow-icon-wrapper"><img src="https://assets.website-files.com/5fef5619b640934b33c2385e/5fef584a5ceaed4f77de60cb_Vector.svg" loading="lazy" alt="" class="image contain"/></div></div>
+                <div className="testimonial-arrow left w-slider-arrow-left" role="button" tabIndex="0" aria-controls="w-slider-mask-1" aria-label="previous slide"><div className="testimonial-arrow-icon-wrapper"><img src="https://assets.website-files.com/5fef5619b640934b33c2385e/5fef584ac8595f0e43b2b567_Vector-1.svg" loading="lazy" alt="" className="image contain"/></div></div>
+                <div className="testimonial-arrow right w-slider-arrow-right" role="button" tabIndex="0" aria-controls="w-slider-mask-1" aria-label="next slide"><div className="testimonial-arrow-icon-wrapper"><img src="https://assets.website-files.com/5fef5619b640934b33c2385e/5fef584a5ceaed4f77de60cb_Vector.svg" loading="lazy" alt="" className="image contain"/></div></div>
                 </div>
                         </div>
                         </div>

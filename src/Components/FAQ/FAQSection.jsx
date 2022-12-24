@@ -3,7 +3,14 @@ import './FAQSection.css';
 
 const FAQSection = () => {
     const [click, setClick] = useState(false);
-    console.log(click)
+    // console.log(click)
+    // const handleClick = (e, {item}) => {
+    //     console.log(e, {item})
+    //     setClick(!click)
+    //     // if(item.id === id){
+
+    //     // }
+    // }
 
     const Left_FAQ = [
         {
@@ -51,44 +58,44 @@ const FAQSection = () => {
     ]
     return (
         <section>
-            <div class="faq-section wf-section">
-                <div class="wrapper faq-heading">
-                    <div class="faq-subtext-wrapper">
-                        <h6>FAQ</h6></div><div class="faq-heading-wrapper">
-                        <h2 class="white">Frequently asked questions</h2>
+            <div className="faq-section wf-section">
+                <div className="wrapper faq-heading">
+                    <div className="faq-subtext-wrapper">
+                        <h6>FAQ</h6></div><div className="faq-heading-wrapper">
+                        <h2 className="white">Frequently asked questions</h2>
                     </div>
                 </div>
-                <div class="wrapper faq-down">
-                    <div class="faq-container">
-                        <div class="faq-left">
+                <div className="wrapper faq-down">
+                    <div className="faq-container">
+                        <div className="faq-left">
                             {
                                 Left_FAQ.map(item => 
-                                    <div class="faq-item">
-                                <div class="faq-question-and-arrow-wrapper" onClick={() => setClick(!click)}>
-                                    <div class="faq-question-wrapper">
-                                        <div class="faq-question">{item.FAQquestion}</div>
+                                    <div key={item.id} className="faq-item">
+                                <div className="faq-question-and-arrow-wrapper" >
+                                    <div className="faq-question-wrapper">
+                                        <div className="faq-question">{item.FAQquestion}</div>
                                     </div>
-                                    <div class="faq-icon-wrapper">
-                                        <img src="https://assets.website-files.com/5fef5619b640934b33c2385e/5fef58435e05bd67f4a4c972_arrow-down-s-line%201.svg" loading="lazy" alt="" class="image contain" />
+                                    <div className={`faq-icon-wrapper ${click ? 'faq-icon-active' : ''}`}>
+                                        <img src="https://assets.website-files.com/5fef5619b640934b33c2385e/5fef58435e05bd67f4a4c972_arrow-down-s-line%201.svg" loading="lazy" alt="" className="image contain" />
                                     </div>
                                 </div>
-                                <div class="faq-answer">
-                                    <p class={`paragraph _18-px ${click ? 'active' : 'd_hidden'}`}>{item.FAQanswer}</p>
+                                <div className="faq-answer">
+                                    <p className={`paragraph _18-px ${click ? 'active' : 'd_hidden'}`}>{item.FAQanswer}</p>
                                 </div>
                             </div>
                                     )
                             }
                         </div>
-                        <div class="faq-right">
+                        <div className="faq-right">
                         {
                             Right_FAQ.map(item => 
-                                <div class="faq-item">
-                            <div class="faq-question-and-arrow-wrapper" onClick={() => setClick(!click)}>
-                                <div class="faq-question-wrapper">
-                                    <div class="faq-question">{item.FAQquestion}</div>
-                                    </div><div class="faq-icon-wrapper">
-                                        <img src="https://assets.website-files.com/5fef5619b640934b33c2385e/5fef58435e05bd67f4a4c972_arrow-down-s-line%201.svg" loading="lazy" alt="" class="image contain"/></div></div><div class="faq-answer">
-                            <p class={`paragraph _18-px ${click ? 'active' : 'd_hidden'} `}>{item.FAQanswer}</p>
+                                <div key={item.id} className="faq-item">
+                            <div className="faq-question-and-arrow-wrapper" onClick={() => setClick(!click)}>
+                                <div className="faq-question-wrapper">
+                                    <div className="faq-question">{item.FAQquestion}</div>
+                                    </div><div className="faq-icon-wrapper">
+                                        <img src="https://assets.website-files.com/5fef5619b640934b33c2385e/5fef58435e05bd67f4a4c972_arrow-down-s-line%201.svg" loading="lazy" alt="" className="image contain"/></div></div><div className="faq-answer">
+                            <p className={`paragraph _18-px ${click ? 'active' : 'd_hidden'} `}>{item.FAQanswer}</p>
                             </div></div>
                                 )
                         }

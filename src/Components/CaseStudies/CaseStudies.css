@@ -1,3 +1,8 @@
 .case-study-heading-wrapper {
     margin-top: 20px;
+    /* margin-bottom: 0px; */
+}
+.wrapper.case-studies-heading {
+    padding-bottom: 0px;
+    justify-content: space-between;
 }

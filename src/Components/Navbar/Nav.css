@@ -1,56 +1,81 @@
 .wrapper.nav {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
     width: 85%;
     max-width: 1215px;
     margin-right: auto;
     margin-left: auto;
 }
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #000;
+    font-size: 75px;
+    line-height: 110%;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
 .nav-link {
     margin-right: 20px;
     padding: 0px 10px 10px;
-    transition: color 200ms ease;
     color: #000;
-    font-size: 16px;
+
     line-height: 28px;
     transition: color 200ms ease;
     position: relative;
     vertical-align: top;
     text-decoration: none;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: rgb(112, 112, 112);
 }
+
 a {
     color: #3c46ff;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 130%;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
 }
+
 .nav-button-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .nav-button {
     padding-right: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
     text-decoration: none;
-     display: flex;
+    display: flex;
 }
+
 .nav-button-text {
     color: #000;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 28px;
-    font-weight: 500;
+    font-weight: 600;
+
 }
+
+.nav-button-flex:hover .nav-button-arrow-wrapper {
+    transform: translate3d(10px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    transition: transform .2s ease-in;
+
+}
+
 .w-inline-block {
     max-width: 100%;
     display: inline-block;
 }
-.nav-button-arrow-wrapper{
-   margin-left: 8px;
-   transition: color 200ms ease;
+
+.nav-button-arrow-wrapper {
+    margin-left: 8px;
+    transition: color 200ms ease;
 }

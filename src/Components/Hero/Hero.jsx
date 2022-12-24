@@ -20,14 +20,14 @@ const Hero = () => {
                     <p className="paragraph">Hi! I’m Jake, a product designer based in Berlin. I create user-friendly interfaces for fast-growing startups.</p>
                     </div>
                     <div className="home-hero-button-wrapper">
-                        <a href="" className="button w-inline-block">
+                        <a href="/" className="button w-inline-block">
                             <div className="button-up">
                                 <div className="button-text">Book a call</div>
                             </div>
                             <div className="button-down">
                             </div>
                         </a>
-                        <a href="" className="home-hero-link-wrapper w-inline-block">
+                        <a href="/" className="home-hero-link-wrapper w-inline-block">
                         <div className="home-hero-link-text">Download CV</div>
                         <div className="home-hero-arrow-wrapper"><img src="https://assets.website-files.com/5fef5619b640934b33c2385e/5ff019fc559a4200eda62273_Vector.svg" loading="lazy" alt="" className="image contain"/></div>
                         </a>

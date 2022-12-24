@@ -48,7 +48,7 @@ const Services = () => {
                 <div className="services-grid">             
                     {
                         service_category.map(item => 
-                            <div className="service-wrapper" key={item.id}>
+                            <div key={item.id} className="service-wrapper">
                         <div className="service-item-icon-wrapper">
                             <img src={item.img} loading="lazy" alt="" className="image contain"
                             />
