@@ -2,15 +2,14 @@ import React, { useState } from 'react';
 import './FAQSection.css'; 
 
 const FAQSection = () => {
-    const [click, setClick] = useState(false);
-    // console.log(click)
-    // const handleClick = (e, {item}) => {
-    //     console.log(e, {item})
-    //     setClick(!click)
-    //     // if(item.id === id){
+    const [selected, setselected] = useState(null);
+    const toggle = (id) => {
+        if(selected === id){
+            return setselected(null)
+        }
 
-    //     // }
-    // }
+        return setselected(id)
+    }
 
     const Left_FAQ = [
         {
@@ -36,22 +35,22 @@ const FAQSection = () => {
     ]
     const Right_FAQ = [
         {
-            id: 1,
+            id: 5,
             FAQquestion: 'How do you charge for projects ?',
             FAQanswer: "I quote a price upfront--so that you know exactly what you're paying and for what, and there are no surprises later. The exact cost of your project depends on the scope and requirements!",
         },
         {
-            id: 2,
+            id: 6,
             FAQquestion: 'What does your design process look like?',
             FAQanswer: `I take a problem-forward approach. Whether we're iterating on an existing product or building a new one from scratch, how to solve the user's problem in the simplest way possible is my first concern. Send me an email to understand my process in depth!`,
         },
         {
-            id: 3,
+            id: 7,
             FAQquestion: 'What metrics do you use to measure success?',
             FAQanswer: "The best metrics are customer adoption, happiness, task success, and engagement. There are a number of frameworks such as the System Usability Scale that help us understand product performance and I'm happy to help with that.",
             },
             {
-                id: 4,
+                id: 8,
                 FAQquestion: 'What if I need help after the project is complete?',
                 FAQanswer: "I always make sure to help out my clients one month after the project ends, for free. For any help post that, we can work out an ongoing arrangement!",
             }
@@ -71,16 +70,16 @@ const FAQSection = () => {
                             {
                                 Left_FAQ.map(item => 
                                     <div key={item.id} className="faq-item">
-                                <div className="faq-question-and-arrow-wrapper" >
+                                <div className="faq-question-and-arrow-wrapper" onClick={() => toggle(item.id)}>
                                     <div className="faq-question-wrapper">
                                         <div className="faq-question">{item.FAQquestion}</div>
                                     </div>
-                                    <div className={`faq-icon-wrapper ${click ? 'faq-icon-active' : ''}`}>
+                                    <div className={`faq-icon-wrapper ${selected === item.id ? 'faq-icon-active' : ''}`}>
                                         <img src="https://assets.website-files.com/5fef5619b640934b33c2385e/5fef58435e05bd67f4a4c972_arrow-down-s-line%201.svg" loading="lazy" alt="" className="image contain" />
                                     </div>
                                 </div>
                                 <div className="faq-answer">
-                                    <p className={`paragraph _18-px ${click ? 'active' : 'd_hidden'}`}>{item.FAQanswer}</p>
+                                    <p className={`paragraph _18-px ${selected === item.id ? 'active' : 'd_hidden'}`}>{item.FAQanswer}</p>
                                 </div>
                             </div>
                                     )
@@ -90,12 +89,12 @@ const FAQSection = () => {
                         {
                             Right_FAQ.map(item => 
                                 <div key={item.id} className="faq-item">
-                            <div className="faq-question-and-arrow-wrapper" onClick={() => setClick(!click)}>
+                            <div className="faq-question-and-arrow-wrapper" onClick={() => toggle(item.id)}>
                                 <div className="faq-question-wrapper">
                                     <div className="faq-question">{item.FAQquestion}</div>
-                                    </div><div className="faq-icon-wrapper">
+                                    </div><div className={`faq-icon-wrapper ${selected === item.id ? 'faq-icon-active' : ''}`}>
                                         <img src="https://assets.website-files.com/5fef5619b640934b33c2385e/5fef58435e05bd67f4a4c972_arrow-down-s-line%201.svg" loading="lazy" alt="" className="image contain"/></div></div><div className="faq-answer">
-                            <p className={`paragraph _18-px ${click ? 'active' : 'd_hidden'} `}>{item.FAQanswer}</p>
+                            <p className={`paragraph _18-px ${selected === item.id ? 'active' : 'd_hidden'} `}>{item.FAQanswer}</p>
                             </div></div>
                                 )
                         }
