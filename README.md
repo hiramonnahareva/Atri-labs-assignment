@@ -1,4 +1,5 @@
-## Live-side: https://singular-florentine-35d6f3.netlify.app/
+
+[Live Website Link]( https://singular-florentine-35d6f3.netlify.app/)
 ### sections: 
 * Banner
 * Trusted by
