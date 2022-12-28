@@ -26,9 +26,10 @@
     filter: saturate(0%);
 }
 .image {
-    width: 100%;
+   
     height: 100%;
     object-fit: cover;
+    
 }
 .testimonial-slider-image-cover {
     position: absolute;
@@ -96,7 +97,7 @@ h3 {
     right: 4%;
     bottom: 0%;
 }
-.testimonial-content{
+.testimonial-down{
     position: relative;
 }
 .testimonial-arrow-container{
@@ -104,7 +105,7 @@ h3 {
     justify-content: end;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 160px;
 }
 .testimonial-arrow-icon-wrapper {
     display: flex;
